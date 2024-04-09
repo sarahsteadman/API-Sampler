@@ -1,6 +1,7 @@
 body {
-    background-color: black;
+    background-color: #6e06b4;
     color: white;
+    transition: background-color 2s;
 }
 
 H1,
@@ -40,6 +41,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .center {
@@ -59,6 +61,7 @@ button {
     text-decoration: none;
     margin: 10px;
     width: 70%;
+    cursor: pointer;
 }
 
 img {
@@ -79,8 +82,24 @@ img {
     border-radius: 10px;
 }
 
+#multiple-choice {
+    width: fit-content;
+    display: block;
+    margin: 15px auto;
+}
+
+label,
 input {
-    font-size: 18px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.focus {
+    font-size: 17px;
+}
+
+#answer1 {
+    text-indent: 0px;
 }
 
 button:hover {
@@ -116,6 +135,12 @@ button:hover {
     align-items: center;
 }
 
+blockquote {
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+
 table {
     border-image: linear-gradient(to right, #59f3fe, #aaff47) 1;
     border-width: 3px;
@@ -136,4 +161,36 @@ select {
     border: 5px dotted white;
     margin-top: 4px;
     margin-bottom: 8pxs;
+}
+
+li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+li:hover {
+    background-image: linear-gradient(to right, #9B08ff 0%, #fd4573 51%, #fd933c 100%);
+}
+
+#history {
+    background-image: linear-gradient(to right, #9B08ff 0%, #fd4573 100%);
+    border: none;
+    padding: 11px;
+    display: block;
+    width: 30%;
+    max-width: 150px;
+    margin: auto;
+}
+
+#history:hover {
+    background-image: linear-gradient(to right, #fd4573 0%, #fd933c 100%);
+}
+
+tr:nth-child(even) {
+    background-color: #4a4a4a;
+}
+
+td {
+    padding: 8px;
+    width: 50%;
 }
